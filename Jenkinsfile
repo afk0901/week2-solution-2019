@@ -5,17 +5,17 @@ node {
         sh "git stash"
     }
     stage("Setup") {
-        dir("game-api") {
+        dir("game_api") {
             sh "npm install"
         }
     }
     stage("Lint") {
-        dir("game-api") {
+        dir("game_api") {
             sh "npm run eslint"
         }
     }
     stage("Test") {
-        dir("game-api") {
+        dir("game_api") {
             sh "npm run test:unit"
         }
     }
