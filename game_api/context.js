@@ -1,4 +1,5 @@
 const express = require('express');
+const config = require('./config.js');
 const database = require('./database.js');
 const lucky21 = require('./lucky21.js');
 const {Client} = require('pg');
@@ -12,6 +13,7 @@ module.exports = {
   newContext: () => {
     return inject({
       'express': express,
+      'config': config,
       'pgClient': Client,
       'database': database,
       'lucky21': lucky21,
