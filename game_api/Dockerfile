@@ -6,6 +6,10 @@ COPY package.json package.json
 
 RUN npm install
 
-COPY *.js *.js
+COPY dealer.js dealer.js
+
+COPY deck.js deck.js
+
+COPY lucky21.js lucky21.js
 
 CMD node app.js
