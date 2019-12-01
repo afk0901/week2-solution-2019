@@ -32,7 +32,7 @@ resource "aws_security_group" "game_security_group" {
 
 # TODO Comment 2-3 sentences.
 resource "aws_instance" "game_server" {
-  ami                    = "ami-003dae68d018759d1"
+  ami                    = "ami-04763b3055de4860b"
   instance_type          = "t2.micro"
   key_name               = "GameKeyPair"
   vpc_security_group_ids = [aws_security_group.game_security_group.id]
