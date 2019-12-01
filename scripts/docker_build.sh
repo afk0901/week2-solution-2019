@@ -4,7 +4,6 @@ set -euxo pipefail
 
 GIT_COMMIT=$1
 
-cd itemrepository
-docker build -t username/repo:$GIT_COMMIT .
+docker build -t username/repo:$GIT_COMMIT item_repository/
 
 exit 0
