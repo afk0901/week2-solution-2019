@@ -3,6 +3,8 @@ echo 'and then starts the API.'
 
 export DEBIAN_FRONTEND=noninteractive
 
+sudo apt update
+
 echo 'Installing Docker'
 sudo apt-get install -y \
     apt-transport-https \
