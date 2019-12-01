@@ -1,5 +1,3 @@
-const dealerConstructor = require('./dealer.js');
-
 function newRandom(randomReturnValues) {
   let i = 0;
   return {
