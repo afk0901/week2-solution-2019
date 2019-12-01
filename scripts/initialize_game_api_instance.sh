@@ -5,6 +5,8 @@ set -euxo pipefail
 echo 'This script installs everything needed to run our API on the instance'
 echo 'and then starts the API.'
 
+export DEBIAN_FRONTEND=noninteractive
+
 sudo apt update
 
 echo 'Installing Docker'
