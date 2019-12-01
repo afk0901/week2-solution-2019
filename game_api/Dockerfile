@@ -6,8 +6,6 @@ COPY package.json package.json
 
 RUN npm install
 
-COPY database.js database.js
-
-COPY app.js app.js
+COPY *.js *.js
 
 CMD node app.js

@@ -1,0 +1,16 @@
+{
+  "name": "item_repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "jest --testRegex .*\\.unit-test\\. --collectCoverage true"
+  },
+  "author": "Hrafn Orri Hrafnkelsson",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
