@@ -54,6 +54,17 @@ resource "aws_instance" "game_server" {
     }
   }
 
+  provisioner "file" {
+    source      = "scripts/docker_compose_up.sh"
+    destination = "/home/ubuntu/docker_compose_up.sh"
+
+    connection {
+      type        = "ssh"
+      user        = "ubuntu"
+      private_key = "${file("~/.aws/GameKeyPair.pem")}"
+    }
+  }
+
   # TODO Comment 1-2 sentences.
   # TODO Comment 1-2 sentences.
   provisioner "file" {
