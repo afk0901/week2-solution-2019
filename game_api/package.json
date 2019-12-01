@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test:unit": "jest --testRegex .*\\.unit-test\\. --collectCoverage true",
-    "eslint": "eslint \"**/*.js\" --ignore-pattern '/node_modules/'"
+    "eslint": "eslint \"**/*.js\" --ignore-pattern '/node_modules/'",
+    "eslint:fix": "eslint \"**/*.js\" --ignore-pattern '/node_modules/' --fix"
   },
   "author": "Hrafn Orri Hrafnkelsson",
   "license": "ISC",
