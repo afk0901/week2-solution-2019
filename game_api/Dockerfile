@@ -4,17 +4,9 @@ WORKDIR /code
 
 COPY package.json package.json
 
-RUN npm install
+RUN npm install --production
 
-COPY app.js app.js
-COPY config.js config.js
-COPY context.js context.js
-COPY database.js database.js
-COPY dealer.js dealer.js
-COPY deck.js deck.js
-COPY inject.js inject.js
-COPY lucky21.js lucky21.js
-COPY random.js random.js
-COPY server.js server.js
+# This skips the test files because we have a .dockerignore file defined
+COPY *.js ./
 
 CMD node app.js
